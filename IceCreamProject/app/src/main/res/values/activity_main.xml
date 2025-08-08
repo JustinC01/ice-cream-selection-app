@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources></resources>
+    <?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Select a Flavor"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.44"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.022" />
+<RadioGroup
+    android:id="@+id/flavorrgID"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="600dp"
+    android:orientation="horizontal"
+18
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/textView">
+<RadioButton
+    android:id="@+id/radioButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Chocolate" />
+<RadioButton
+    android:id="@+id/radioButton2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Vanilla" />
+<RadioButton
+    android:id="@+id/radioButton3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Oreo" />
+</RadioGroup>
+<TextView
+android:id="@+id/textView2"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Toppings (check all that applies)"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.498"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.224" />
+<LinearLayout
+android:id="@+id/linearLayout"
+android:layout_width="360dp"
+android:layout_height="51dp"
+android:orientation="horizontal"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.49"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.314">
+19
+<CheckBox
+    android:id="@+id/pbcbID"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="Peanut Butter" />
+<CheckBox
+    android:id="@+id/rpcbID"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="Reese's Pieces" />
+</LinearLayout>
+<LinearLayout
+android:layout_width="357dp"
+android:layout_height="66dp"
+android:orientation="horizontal"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.462"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+app:layout_constraintVertical_bias="0.062">
+<CheckBox
+    android:id="@+id/cacbID"
+    android:layout_width="61dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="Caramel" />
+<CheckBox
+    android:id="@+id/orcbID"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="Oreo" />
+</LinearLayout>
+<LinearLayout
+android:id="@+id/linearLayout2"
+android:layout_width="362dp"
+android:layout_height="77dp"
+android:orientation="horizontal"
+    20
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.518"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+    app:layout_constraintVertical_bias="0.305">
+<CheckBox
+android:id="@+id/rscbID"
+android:layout_width="88dp"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:text="Rainbow Sprinkles" />
+<CheckBox
+android:id="@+id/hfcbID"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:text="Hot Fudge" />
+    </LinearLayout>
+<Button
+android:id="@+id/buttonID"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Button"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+app:layout_constraintVertical_bias="0.171" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
